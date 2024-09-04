@@ -16,20 +16,20 @@ I also recommend making a gallery-dl.conf file for sites you might need to sign 
 Example from my config below
 ```json
 {
-    "extractor": {
-		"base-directory": "A:/gallery-dl/downloads",
-	    "danbooru": {
-            "username": "Username",
-            "password": "APIKey",
-            "filename": "Danbooru {id} {filename}.{extension}",
-            "directory": "."
-        },
-	    "twitter": {
-		    "filename": "Twitter {user[name]} {tweet_id} {filename}.{extension}",
-			"cookies": "A:/gallery-dl/twitter-cookies.txt",
-		    "directory": "."
-        }
+	"extractor": {
+	"base-directory": "A:/gallery-dl/downloads",
+	"danbooru": {
+		"username": "Username",
+		"password": "APIKey",
+		"filename": "Danbooru {id} {filename}.{extension}",
+		"directory": "."
+	},
+	"twitter": {
+		"filename": "Twitter {user[name]} {tweet_id} {filename}.{extension}",
+		"cookies": "A:/gallery-dl/twitter-cookies.txt",
+		"directory": "."
 	}
+}
 }
 
 ```
