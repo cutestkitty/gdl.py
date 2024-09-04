@@ -8,10 +8,31 @@ There's probably a better way that doesn't require a python script, but I can't 
 ## Setup
 
 - Download [gallery-dl.exe](https://github.com/mikf/gallery-dl/releases/) and place it in any directory you want.
-- Download gdl.py and move it to the same folder as `gallery-dl.exe`.
-- Download python
+- Download [gdl.py](https://raw.githubusercontent.com/cutestkitty/gdl.py/main/gdl.py) and move it to the same folder as `gallery-dl.exe`.
+- Download [Python](https://www.python.org/) too
 
-I also recommend making a gallery-dl.conf file for sites you might need to sign in to
+I also recommend making a gallery-dl.conf file for sites you might need to sign in to, or changing filenames and the directory images save, etc.
+
+Example from my config below
+```json
+{
+    "extractor": {
+		"base-directory": "A:/gallery-dl/downloads",
+	    "danbooru": {
+            "username": "Username",
+            "password": "APIKey",
+            "filename": "Danbooru {id} {filename}.{extension}",
+            "directory": "."
+        },
+	    "twitter": {
+		    "filename": "Twitter {user[name]} {tweet_id} {filename}.{extension}",
+			"cookies": "A:/gallery-dl/twitter-cookies.txt",
+		    "directory": "."
+        }
+	}
+}
+
+```
 
 ## Usage
 
